@@ -22,7 +22,7 @@ const handleSpringProps = (componentName, show) => {
   return {
     config: component.springConfig,
     from: { transform: show ? component.transform.from.in : component.transform.from.out },
-    transform: show ? component.transform.to.in : component.transform.to.out,
+    to: { transform: show ? component.transform.to.in : component.transform.to.out },
   };
 }
 
